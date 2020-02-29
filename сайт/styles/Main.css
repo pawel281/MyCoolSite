@@ -141,8 +141,38 @@ background: rgba(0, 0, 60, 0.1)
 }
 .skills li:hover::after{
 content: attr(txtTable);
-margin-left: 64px;
 color: #FFFFFF;
 font-size: 15px;
+text-indent: 0px;
 }
 
+.contact{
+
+margin-left: 50px;
+border-collapse: collapse;
+margin: auto;
+
+}
+
+
+
+.contact img{
+height: 32px;
+width: 32px;
+}
+
+.contact tr{
+background:  rgba(0, 30, 100, 0.09);
+transition: 1s;
+}
+.contact tr:hover{
+background:  rgba(100, 100, 100, 0.4);
+transition: 1s;
+}
+
+.contact td{
+border: 4px solid  rgba(10, 11, 38, 0.7); 
+text-align: center;
+padding: 5px;
+color: white;
+}

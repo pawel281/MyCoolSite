@@ -7,3 +7,20 @@ if(toDay<new Date(toDay.getFullYear(),birthDay.getMonth(),birthDay.getDay())){
 }
 
 document.getElementById('age').innerHTML=age;
+
+
+var contact=document.getElementsByTagName("table")
+
+if(contact!=null){
+
+contact[0].onclick=function(event){
+if(event.target.tagName=='td'){
+
+alert("ghj");
+}
+}
+
+}
+
+
+
