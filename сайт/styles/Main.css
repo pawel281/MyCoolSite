@@ -189,7 +189,7 @@ text-align: center;
 padding: 5px;
 color: white;
 word-wrap:  break-word;
-width: 80px;
+ word-break: break-word;
 }
 .tableR{   width: 100%;
  }
