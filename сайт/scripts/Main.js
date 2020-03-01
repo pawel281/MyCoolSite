@@ -14,9 +14,9 @@ var contact=document.getElementsByTagName("table")
 if(contact!=null){
 
 contact[0].onclick=function(event){
-if(event.target.tagName=='td'){
+if(event.target.tagName=='TD'){
+	location.href=event.target.parentNode.getElementsByTagName("a")[0].href;
 
-alert("ghj");
 }
 }
 
