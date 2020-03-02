@@ -11,7 +11,7 @@ document.getElementById('age').innerHTML=age;
 
 var contact=document.getElementsByTagName("table")
 
-if(contact!=null){
+if(contact.length>0){
 
 	contact[0].onclick=function(event){
 		if(event.target.tagName=='TD'){
