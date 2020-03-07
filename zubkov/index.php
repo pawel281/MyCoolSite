@@ -11,14 +11,9 @@
 
 <h1>"Сайт имени меня"</h1>
 	<div id="back">
-	<div id="menu">
-	<ul>
-		<li><a href="index.html">Главная</a></li>
-	<li><a href="projects.html">Проекты</a></li>
-	<li><a href="about.html"> <span class="TextSpacing">О мне</span></a></li>
-		
-	</ul>	
-	</div>	
+	<?php 
+	require 'bloks/header.php';
+	?>	
 		<article>
 	<section>
 	<p >
