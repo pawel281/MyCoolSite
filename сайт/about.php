@@ -11,14 +11,9 @@
 
 <h1>"Сайт имени меня"</h1>
 	<div id="back">
-	<div id="menu">
-	<ul>
-		<li><a href="index.html">Главная</a></li>
-	<li><a href="projects.html">Проекты</a></li>
-	<li><a href="about.html"> <span class="TextSpacing">О мне</span></a></li>
-		
-	</ul>	
-	</div>	
+	<?php 
+	require 'bloks/header.php';
+	?>
 		<article style="display: block">
 	<section>
 <!-- Изменил-->	
@@ -31,7 +26,7 @@
 </p>
 <p>
 Итак, моё имя Павел. Зубков Павел. Зубков Павел Николаевич.<br> Мне <span id="age"></span> лет отроду, но за эти года я повидал много дерьма.<br>
-Живу лучшем месте на свете, по <s>мнению жителей этого места</s>,<a href="https://ru.wikipedia.org/wiki/Курская_область" style="text-indent: 0px"> в соловьином крае.</a><br> 
+Живу лучшем месте на свете, <s>по мнению жителей этого места</s>,<a href="https://ru.wikipedia.org/wiki/Курская_область" style="text-indent: 0px"> в соловьином крае.</a><br> 
 Я учусь в <span class="mainWords"> Kingston Global Polytechnic college (KGPC)</span>  разумеется на программиста. А вы что думали? Мы такие, да. <br>
 Ещё я холост и одинок. <br>
 Ключевые навыки:<br>
