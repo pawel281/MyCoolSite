@@ -15,21 +15,24 @@
 		require 'bloks/header.php';
 		?>	
 		<article style="display: block">
-				<h2>
-					<span class="mainWords">
+			<h2>
+				<span class="mainWords">
 
-						<?php
-						echo ($_GET["name"]);
+					<?php
+					echo ($_GET["name"]);
 
-						?>	
-					</span>
-				</h2>
+					?>	
+				</span>
+			</h2>
+
+			<div class="sliderControl">
 				<div class="slider">
 					<ul>		
 						<?php
-						$img=explode(",",$_GET["img"]);
+						$img=mb_convert_encoding( explode(",",$_GET["img"]),"utf-8");
+						
 						foreach ($img as $i){
-echo "<li><div><img src=$i></div></li>";			
+							echo "<li><div><img src=$i></div></li>";			
 						}
 
 						?>
@@ -38,9 +41,19 @@ echo "<li><div><img src=$i></div></li>";
 
 
 				</div>
-				<p>
-					
-				</p>
+		<button><</button>
+		<button>></button>
+		</div>
+
+			<p>
+				<?php 
+
+				$txt=implode("<br>",file($_GET["des"]));
+				echo "$txt";
+
+
+				?>	
+			</p>
 
 
 				<!--<div class="link">					
@@ -61,14 +74,14 @@ echo "<li><div><img src=$i></div></li>";
 
 
 
-			</article>	
+				</article>	
 
-			<footer>
-				(с) Все права защищены. <br/> При копировании  материалов вас ожидает смертная казнь по законом ОАР.<br/>
-				Повешенье, четвертование, расстрел.  
+				<footer>
+					(с) Все права защищены. <br/> При копировании  материалов вас ожидает смертная казнь по законом ОАР.<br/>
+					Повешенье, четвертование, расстрел.  
 
 
-			</footer>
-		</div>		
-	</body>
-	</html>
+				</footer>
+			</div>		
+		</body>
+		</html>

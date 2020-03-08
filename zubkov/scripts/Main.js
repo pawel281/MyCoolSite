@@ -5,8 +5,10 @@ age=toDay.getFullYear()-birthDay.getFullYear();
 if(toDay<new Date(toDay.getFullYear(),birthDay.getMonth(),birthDay.getDay())){
 	age = age-1;
 }
-
+if (document.getElementById('age')) {
 document.getElementById('age').innerHTML=age;
+}
+
 
 
 var contact=document.getElementsByTagName("table")

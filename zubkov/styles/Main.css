@@ -226,10 +226,46 @@ border-radius: 0px;
 transition: all 0.5s ease-in-out;
 }
 
+.sliderControl{
+	display: block;
+	margin:  0 auto;
+height: 312px;
+width: 80%;
+
+}
+
 .slider{
 	display: block;
 	margin:  0 auto;
 background: rgba(190, 11, 38, 0.7);
-height: 200px;
-width: 2506px;
+height: 80%;
+width: 100%;
+overflow: hidden;
+}
+.slider ul{
+padding: 0;
+margin: 0;
+height:100%;
+width: 100%;
+white-space: nowrap;
+}
+
+.slider ul li{
+display: inline-block;
+height: 100%;
+width: 100%;
+
+}
+
+.slider ul li div{
+	display: block;
+height: 100%;
+width: 100%;
+}
+
+.slider ul li div img{
+display: block;
+padding: 0;
+margin: 0 auto;
+width: 100%;
 }
