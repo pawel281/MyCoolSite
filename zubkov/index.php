@@ -34,10 +34,6 @@
 </p>
 
 
-<audio  autoplay loop>
-	<source src="resources/track.mp3" type="audio/mpeg">
-		Тег не поддерживается
-</audio>
 </section>
 <section class="sec">
 	<div>

@@ -204,5 +204,32 @@ word-break: break-word;
  width: 80%;  
  }
 
+ .games{
+margin: 0px 30px 0 30px;
+padding: 0;
+ }
+.games li{
+	margin: 16px;
+display: block;
+list-style-type: none;
+text-align: center;
+line-height: 64px;
+background:radial-gradient(45% 55%,
+	rgba(62, 60, 89, 0.6) ,
+	rgba(62, 60, 89, 0.05));
+border-radius: 25px;
+transition: all 0.5s ease-in-out;
+}
+.games li:hover{
+ background-position: 130px;
+border-radius: 0px;
+transition: all 0.5s ease-in-out;
+}
 
-
+.slider{
+	display: block;
+	margin:  0 auto;
+background: rgba(190, 11, 38, 0.7);
+height: 200px;
+width: 2506px;
+}

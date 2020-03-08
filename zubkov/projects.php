@@ -25,40 +25,9 @@
 				<p>
 					Здесь представлены мои проекты, как законченные и релизнутые, так и заброшенные. Так же здесь представленны   эксперементы и  прототипы.
 				</p>
-				<ul>
+				<ul class="games">
 					<?php
-					$dir='games/';
-					$games=scandir($dir);
-					foreach($games as $file) {
-						if(is_dir($dir.$file) && $file!="." &&$file!=".."){
-							$description="";
-							$images=array();
-							foreach (scandir($dir.$file) as $gameFile) {
-								if($gameFile!="." && $gameFile!=".."){
-									switch (explode(".", $gameFile)[1]) {
-										case "txt":
-										$description=$dir.$file."/".$gameFile;
-										break;
-										case "png":
-										array_push($images,$dir.$file."/".$gameFile);
-										break;
-										case "jpg":
-										array_push($images,$dir.$file."/".$gameFile);
-										break;
-										case "gif":
-										array_push($images,$dir.$file."/".$gameFile);
-										break;
-									}
-
-								}
-							}
-						$str=implode(",", $images);
-						echo $str;
-echo "<li><a href=test.php?des=$description&img=$str> $file</a></li>";
-
-						}
-					}
-
+					include("scripts/gameList.php");
 					?>
 				</ul>
 
