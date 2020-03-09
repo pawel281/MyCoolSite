@@ -29,10 +29,14 @@
 				<div class="slider">
 					<ul>		
 						<?php
-						$img=mb_convert_encoding( explode(",",$_GET["img"]),"utf-8");
+						$img=explode(",",$_GET["img"]);
 						
 						foreach ($img as $i){
-							echo "<li><div><img src=$i></div></li>";			
+							echo "<li><div style=\"background:url($i);  
+							background-repeat: no-repeat;
+							background-size: contain; 
+							background-position:center;      
+							\"></div></li>";			
 						}
 
 						?>
@@ -41,9 +45,9 @@
 
 
 				</div>
-		<button><</button>
-		<button>></button>
-		</div>
+				<button id="sliderNext"><</button>
+				<button  id="sliderBack">></button>
+			</div>
 
 			<p>
 				<?php 
@@ -83,5 +87,6 @@
 
 				</footer>
 			</div>		
+			<script src="scripts/Slider.js"></script>
 		</body>
 		</html>

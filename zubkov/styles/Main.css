@@ -1,4 +1,4 @@
-body{
+ body{
 	background-image: url('../resources/back.gif');
 	background-color: #080808;
 	background-repeat: no-repeat;
@@ -229,7 +229,7 @@ transition: all 0.5s ease-in-out;
 .sliderControl{
 	display: block;
 	margin:  0 auto;
-height: 312px;
+height: 512px;
 width: 80%;
 
 }
@@ -240,14 +240,18 @@ width: 80%;
 background: rgba(190, 11, 38, 0.7);
 height: 80%;
 width: 100%;
-overflow: hidden;
+overflow-x: hidden;
+
 }
 .slider ul{
+display: block;
 padding: 0;
 margin: 0;
 height:100%;
 width: 100%;
 white-space: nowrap;
+transition: all 1s ease-in-out;
+  margin-left: auto;
 }
 
 .slider ul li{
@@ -261,11 +265,15 @@ width: 100%;
 	display: block;
 height: 100%;
 width: 100%;
+background-repeat: no-repeat;
+background-size: contain; 
 }
 
+/*
 .slider ul li div img{
 display: block;
 padding: 0;
 margin: 0 auto;
 width: 100%;
-}
+border: 0px;
+}*/
