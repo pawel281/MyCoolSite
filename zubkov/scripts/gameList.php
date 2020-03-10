@@ -23,12 +23,15 @@ foreach($games as $file) {
 					break;
 					case "link":
 					$link=$dir.$file."/".$gameFile;
+					break;
 				}
 
 			}
 		}
-		$str=implode(",", $images);
-		$name=explode(".", $file)[0];
+		$str=str_replace(" ","%20",implode(",", $images));
+		$description=str_replace(" ","%20",$description);
+		$name=str_replace(" ","%20",$file);
+		$link=str_replace(" ","%20",$link);
 		echo "<li><a href=project.php?name=$name&des=$description&link=$link&img=$str> $file</a></li>";
 
 	}

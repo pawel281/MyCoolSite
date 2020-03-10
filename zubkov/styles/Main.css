@@ -24,6 +24,7 @@ h2{
 
 p{
 	color: #FFFFFF;
+	font-weight: 500;
 	font-size: 24px;
 text-indent: 1.5em;
 
@@ -229,7 +230,7 @@ transition: all 0.5s ease-in-out;
 .sliderControl{
 	display: block;
 	margin:  0 auto;
-height: 512px;
+height: 624px;
 width: 80%;
 
 }
@@ -237,11 +238,14 @@ width: 80%;
 .slider{
 	display: block;
 	margin:  0 auto;
-background: rgba(190, 11, 38, 0.7);
+background: rgba(50, 11, 38, 0.3);
 height: 80%;
 width: 100%;
 overflow-x: hidden;
-
+border: 8px  solid   #54226E ; 
+box-sizing: border-box;
+border-radius: 10px;
+box-shadow: 5px 5px 5px rgba(0,0,0,0.7),inset 5px 5px 10px rgba(0,0,0,0.7);
 }
 .slider ul{
 display: block;
@@ -250,7 +254,7 @@ margin: 0;
 height:100%;
 width: 100%;
 white-space: nowrap;
-transition: all 1s ease-in-out;
+transition: all 0.5s ease-in-out;
   margin-left: auto;
 }
 
@@ -258,7 +262,6 @@ transition: all 1s ease-in-out;
 display: inline-block;
 height: 100%;
 width: 100%;
-
 }
 
 .slider ul li div{
@@ -269,11 +272,64 @@ background-repeat: no-repeat;
 background-size: contain; 
 }
 
-/*
-.slider ul li div img{
-display: block;
-padding: 0;
-margin: 0 auto;
-width: 100%;
-border: 0px;
-}*/
+#sliderNext, #sliderBack{
+display: inline-block;
+background-color: rgba(50, 11, 38, 0.5);
+border: 2px  solid   #54226E ; 
+border-radius: 10px;
+width: 20%;
+height: 10%;
+box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+margin: 20px;
+color: white;
+font-weight: 700;
+font-size: 2em;
+float: right;
+transition: all 0.4s ease-in-out;
+}
+
+#sliderNext{
+margin-left: auto;
+float: left;
+margin: 20px;
+}
+
+#sliderNext:active, #sliderNext:focus,#sliderBack:focus,#sliderBack:active{
+  outline: none;
+}
+
+#sliderNext:hover, #sliderBack:hover{
+background-color: rgba(50, 11, 38, 0.9);
+transition: all 0.2s ease-in-out;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+margin: 24px;
+}
+
+.dowParent{
+text-align: center;
+}
+
+.download{
+display: inline-block;
+border: 2px  solid  #286123 ; 
+background-color: rgba(10,80, 10, 0.5);
+border-radius: 10px;
+box-shadow: 0px 8px 5px rgba(0,0,0,0.9);
+transition: all 0.4s ease-in-out;
+padding: 8px;
+}
+.download a{
+color: white;
+font-weight: 700;
+font-size: 2em;
+
+}
+.download:active, .download:focus{
+ outline: none;
+}
+.download:hover{
+	background-color: rgba(10,80, 10, 0.9);
+box-shadow: 0px 1px 5px rgba(0,0,0,0.9);
+
+transition: all 0.2s ease-in-out;
+}

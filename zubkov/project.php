@@ -31,7 +31,8 @@
 						<?php
 						$img=explode(",",$_GET["img"]);
 						
-						foreach ($img as $i){
+						foreach ($img as $i){	
+							$i=str_replace(" ","%20",$i); 
 							echo "<li><div style=\"background:url($i);  
 							background-repeat: no-repeat;
 							background-size: contain; 
@@ -51,32 +52,23 @@
 
 			<p>
 				<?php 
-
 				$txt=implode("<br>",file($_GET["des"]));
 				echo "$txt";
 
 
 				?>	
+		
+
 			</p>
 
 
-				<!--<div class="link">					
-					<p><span>
-						
-						<?php
-						/*if(!empty($_GET[link])){
-							link=file($_GET[link]);	
+			<?php
 
-							echo "Ссылка: ".$_GET(link[0]);
-						}*/
-
-						?> 
-
-					</span><p>
-
-					</div> -->
-
-
+if(!empty($_GET["link"])){
+	$st=file_get_contents($_GET["link"]);
+echo "<div class=\"dowParent \"><div class=\"download\" ><a href=$st>Скачать</a></div><div>";		
+			}
+			?>	
 
 				</article>	
 

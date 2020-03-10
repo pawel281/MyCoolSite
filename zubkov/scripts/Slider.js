@@ -18,5 +18,4 @@ if(num>slider.children[0].children.length-1){
 	num=0;
 }
 slider.children[0].style.transform = `translateX(${-num*100+"%"})`;
-console.log(num);
 }
