@@ -19,3 +19,33 @@ if(num>slider.children[0].children.length-1){
 }
 slider.children[0].style.transform = `translateX(${-num*100+"%"})`;
 }
+
+
+//свайпы 
+slider.addEventListener('touchstart',startSwipe, false);
+slider.addEventListener('touchend',  endSwipe, false);
+
+var xtouch=0;
+
+function startSwipe(evt){
+xtouch=evt.touches[0].clientX;
+
+}
+
+
+function endSwipe(evt){
+
+if(xtouch){
+
+
+if((evt.changedTouches[0].clientX-xtouch)>2){
+butNext.click();
+
+}
+if((evt.changedTouches[0].clientX-xtouch)<-2){
+butBack.click();
+}
+
+}
+}
+	
