@@ -14,19 +14,8 @@
 		?>	
 <article class="newsList">
 		<?php
-	
+require 'scripts/News.php';
 
-		for($i=0;$i<10;$i++){	
-			
-			echo "
-			
-			<div class=\"newsTask\">
-			<div></div>
-			ghjghhgjghuytujhkjhkjhtyuty fgh gfh fg hfg hgf hgf hfgh fgh fg
-			</div>
-			";
-
-}
 			?>	
 	</article>	
 

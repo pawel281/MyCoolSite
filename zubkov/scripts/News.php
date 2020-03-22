@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title></title>
-</head>
-<body>
+
 <?php 
 echo "juhkhj";
 $link=mysqli_connect("localhost", "f9081252_news","6vd*zA*r");
 
 if(!$link){
-echo "Ебать ты лох";
+echo "Ошибка подключения";
 exit();
 }else{
-echo "Ебать ты не лох";
 $link->set_charset("utf8");
 }
 
-$sql="SELECT * FROM  f9081252_news.news";
+$sql="SELECT * FROM  f9081252_news.news ORDER BY date DESC";
 $result=mysqli_query($link,$sql);
 if(!$result){
-	echo "лох дважды";
+	echo "Ошибка подключения";
 }
 while($row=mysqli_fetch_assoc($result))
 {
-echo $row['names'];
+echo( "
+			<div class=\"newsTask\">
+			<div></div>
+			<p>
+${$row['names']}
+			</p>
+			${$row['description']}
+			</div>
+"
+	);	
 }
 mysqli_free_result($result);
 mysqli_close($link);
 
 ?>
-</body>
-</html>
 
 
 

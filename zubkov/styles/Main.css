@@ -340,7 +340,7 @@ justify-content: center;
  	padding: 5px;
  }
  .newsTask{
- 	height: 200px;
+ 	height: 300px;
  	background: rgba(60, 60,60, 0.6);
  	border-radius: 15px;
  	box-shadow: 4px 4px 5px rgba(0,0,0,0.9);
@@ -348,9 +348,10 @@ justify-content: center;
 margin: 10px;
  transition: all 0.5s ease-in-out;
 max-width: 25%;
+ border: 2px solid #101010;
  }
   .newsTask:hover{
-box-shadow: 8px 8px 5px rgba(0,0,0,0.9);
+box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
  	background: rgba(60, 60,60, 0.8);
 transition: all 0.3s ease-in-out;
 margin: 6px;
