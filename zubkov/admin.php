@@ -12,12 +12,27 @@
 		<?php 
 		require 'bloks/header.php';
 		?>	
-<article class="newsList">
-		<p>В эфире НОВОСТИ!. Будьте в курсе всех актуальных новостей!  <br>
-		</p>
+<article style="display: block">
+		<h2>АДМИН ПАНЕЛЬ.<br>
+ПОДТВЕРДИТЕ ЧТО ВЫ, ЭТО ВЕЛИКИЙ ПАВЕЛ ЗУБКОВ!
+		</h2>
+		
+<form action="*" method="post" name="enterAdmin" class="enterAdmin">
+	<p>
+	<input type="text" name="login" placeholder="Введите логин" class="formInputText">
+	</p>
+		<p>
+	<input type="password" name="password" placeholder="Введите пароль" class="formInputText"
+
+	>
+</p>
+<p>
+	<input type="submit" name="but" class="formDone" >
+</p>
+</form>
+
 
 		<?php
-require 'scripts/News.php';
 
 			?>	
 	</article>	
