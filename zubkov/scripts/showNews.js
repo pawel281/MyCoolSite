@@ -1,11 +1,15 @@
 
 
-var newsList=document.getElementById("back");
-newsList.onclick=function(event){
-if(event.target.tagName=='DIV' && event.target.className=='newsTask')
-{
-console.log('hjy');
+var newsList=document.getElementsByClassName("newsTask");
+for(let i=0;i<newsList.length;i++){
+
+newsList[i].addEventListener("click", function(){
+
+location.href="newsView.php?id="+newsList[i].getAttribute('idn');
+});
+
 
 
 }
-}
+
+

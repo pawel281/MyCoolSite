@@ -20,7 +20,7 @@ while($row=mysqli_fetch_assoc($result))
 	$id=$row["id"];
 	$url=$row["images"];
 	echo( "
-		<div class=\"newsTask\" id=$id>
+		<div class=\"newsTask\" idn=$id>
 		<div style=\"
 background-image: url($url)
 		\"></div>
