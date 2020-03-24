@@ -12,15 +12,26 @@
 		<?php 
 		require 'bloks/header.php';
 		?>	
-	<p style="text-indent: 0px; margin: 15px auto 15px auto">В эфире НОВОСТИ!. Будьте в курсе всех актуальных новостей!
-		</p>
+<article style="display: block">
+		<h2>АДМИН ПАНЕЛЬ.<br>
+ПОДТВЕРДИТЕ ЧТО ВЫ, ЭТО ВЕЛИКИЙ ПАВЕЛ ЗУБКОВ!
+		</h2>
+		
+<form action="admin.php" method="post" name="enterAdmin" class="enterAdmin">
+	<p>
+	<input type="text" name="login" placeholder="Введите логин" class="formInputText">
+	</p>
+		<p>
+	<input type="password" name="password" placeholder="Введите пароль" class="formInputText"
 
-<article class="newsList">
-	
-		<?php
-require 'scripts/News.php';
+	>
+</p>
+<p>
+	<input type="submit" name="but" class="formDone" >
+</p>
+</form>
 
-			?>	
+
 	</article>	
 
 		<footer>
@@ -31,7 +42,7 @@ require 'scripts/News.php';
 <!--
 <script  src="scripts/Main.js"></script>
 -->
-<script  src="scripts/showNews.js"></script>
+
 </footer>
 </div>		
 </body>

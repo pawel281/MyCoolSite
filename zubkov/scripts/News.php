@@ -13,14 +13,17 @@ $sql="SELECT * FROM  f9081252_news.news ORDER BY f9081252_news.news.date DESC";
 $result=mysqli_query($link,$sql);
 
 if(!$result){
-	echo "Ошибка подключения";
+	echo "Ошибка подключения".mysqli_error($link);
 }
 while($row=mysqli_fetch_assoc($result))
 {
 	$id=$row["id"];
+	$url=$row["images"];
 	echo( "
 		<div class=\"newsTask\" id=$id>
-		<div></div>
+		<div style=\"
+background-image: url($url)
+		\"></div>
 		<p style='margin:0px;
 		text-indent:0em;
 		text-align: center;

@@ -336,7 +336,7 @@
 
  .newsList{
  	flex-wrap: wrap;
-justify-content: center;
+ 	justify-content: center;
  	padding: 5px;
  }
  .newsTask{
@@ -345,76 +345,119 @@ justify-content: center;
  	border-radius: 15px;
  	box-shadow: 4px 4px 5px rgba(0,0,0,0.9);
  	padding: 5px;
-margin: 10px;
- transition: all 0.5s ease-in-out;
-max-width: 25%;
- border: 2px solid #101010;
-  overflow-x: visible;
-  overflow-y: hidden;
-  max-width: 25%;
-  min-width: 250px;
+ 	margin: 10px;
+ 	transition: all 0.5s ease-in-out;
+ 	max-width: 25%;
+ 	border: 2px solid #101010;
+ 	overflow-x: visible;
+ 	overflow-y: hidden;
+ 	max-width: 25%;
+ 	min-width: 250px;
  }
-  .newsTask:hover{
-box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
+ .newsTask:hover{
+ 	box-shadow: 10px 10px 5px rgba(0,0,0,0.9);
  	background: rgba(60, 60,60, 0.8);
-transition: all 0.3s ease-in-out;
-margin: 6px;
-  }
+ 	transition: all 0.3s ease-in-out;
+ 	margin: 6px;
+ }
  .newsTask div{
  	background-repeat: no-repeat;
  	background-size: cover; 
  	background-position:center; 
  	background-color: red;  
- 	background-image: url('../resources/Photo/topPhoto.png');
  	border-radius: 15px;
  	height: 50%;
 
  }
  .newsTask span{
-text-align: center;
-color: white;
+ 	text-align: center;
+ 	color: white;
  }
  /*
  Админ панель
  */
 
  .entry{
-	text-decoration: none;
+ 	text-decoration: none;
  	color:  #BBBBBB;
  	display: inline;
-} 
-.enterAdmin{
-display: block;
-width: 75%;
-margin: 0 auto;
-background-color: rgba(60, 60,60, 0.4);
-border-radius: 15px;
- border: 2px solid #101010;
+ } 
+ .enterAdmin{
+ 	display: block;
+ 	width: 75%;
+ 	margin: 0 auto;
+ 	background-color: rgba(60, 60,60, 0.4);
+ 	border-radius: 15px;
+ 	border: 2px solid #101010;
  	box-shadow: 4px 4px 5px rgba(0,0,0,0.9), inset 4px 4px 5px rgba(0,0,0,0.9);
 
-padding: 10px;
-}
+ 	padding: 10px;
+ }
 
-.enterAdmin p{
-margin: 15px 0 0 0;
-text-indent:0;
-text-align: center;
-}
+ .enterAdmin p{
+ 	margin: 15px 0 0 0;
+ 	text-indent:0;
+ 	text-align: center;
+ }
 
-.formInputText {
-width: 80%;
-border-radius: 5px;
-height: 30px;
-background-color:rgba(200, 200,200, 1);
- border: 3px solid #151515;
- box-shadow: 2px 2px 5px rgba(0,0,0,0.9)
-}
-.formDone{
-border: 2px  solid  #286123 ; 
+ .formInputText {
+ 	width: 80%;
+ 	border-radius: 5px;
+ 	height: 30px;
+ 	background-color:rgba(200, 200,200, 1);
+ 	border: 3px solid #151515;
+ 	box-shadow: 2px 2px 5px rgba(0,0,0,0.9)
+ }
+ .formDone{
+ 	border: 2px  solid  #286123 ; 
  	background-color: rgba(10,80, 10, 0.5);
  	border-radius: 10px;
  	box-shadow: 0px 8px 5px rgba(0,0,0,0.9);
-width: 50%;
-height: 30px;
-font-size: 20px;
+ 	width: 50%;
+ 	height: 30px;
+ 	font-size: 20px;
+ 	transition: all 0.2s ease-in-out;
+color: white;
+ 	text-align: center;	
+ 	display:  block;
+ 	padding: 0px;
+ 	margin:  0 auto;
  }
+ 
+ .formDone:hover{
+ 	background-color: rgba(10,80, 10, 0.9);
+ 	box-shadow: 0px 1px 5px rgba(0,0,0,0.9);
+ }
+ #cke_editor{
+border-radius: 5px;
+border: 3px solid #101010;	
+ 	margin: auto;
+ }
+  .GetNews p{
+
+  	margin: 0px;
+  	text-align: center;
+  	text-indent: 0em;
+  }
+ .GetNews p textarea, .GetNews p input{
+ 	display: block;
+width: 80%;
+resize: none;
+margin: 15px auto 15px auto;
+
+ }
+.inputCentr{
+margin:  15px auto 15px auto;
+color: white;
+ 	font-size: 20px;
+ 	text-align: center;
+}
+.GetNews p input[type=text]{
+height: 24px;
+}
+
+.inputTxt{
+border-radius: 5px;
+background-color: rgba(250,250,250,1);
+ 	border: 3px solid #101010;	
+}
